@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Website with flexbox</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#first-section">Link 1</a></li>
+                <li><a href="#second-section">Link 2</a></li>
+                <li><a href="#third-section">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="first-section">
+            <h1>This is First Section Title</h1>
+            <a href="#second-section">Some text here...</a>
+        </section>
+        <section id="second-section">
+            <h1>This is Second Section Title</h1>
+            <div class="flex-container">
+                <div class="employee-box">
+                    <div class="box">
+                        <span class="employment">BOX 1</span>
+                        <img src="assets/image/employee.png">
+                    </div>
+                    <h3>Name 1</h3>
+                </div>
+                <div class="employee-box">
+                    <div class="box">
+                        <span class="employment">BOX 2</span>
+                        <img src="assets/image/employee.png">
+                    </div>
+                    <h3>Name 2</h3>
+                    <p>Skill</p>
+                </div>
+                <div class="employee-box">
+                    <div class="box">
+                        <span class="employment">BOX 3</span>
+                        <img src="assets/image/employee.png">
+                    </div>
+                    <h3>Name 3</h3>
+                </div>
+                <div class="employee-box">
+                    <div class="box">
+                        <span class="employment">BOX 4</span>
+                        <img src="assets/image/employee.png">
+                    </div>
+                    <h3>Name 4</h3>
+                </div>
+                <div class="employee-box">
+                    <div class="box">
+                        <span class="employment">BOX 5</span>
+                        <img src="assets/image/employee.png">
+                    </div>
+                    <h3>Name 5</h3>
+                    <p>Skill</p>
+                    <p>Skill 2</p>
+                </div>
+                <div class="employee-box">
+                    <div class="box">
+                        <span class="employment">BOX 6</span>
+                        <img src="assets/image/employee.png">
+                    </div>
+                    <h3>Name 6</h3>
+                    <p>Skill</p>
+                </div>
+            </div>
+        </section>
+        <section id="third-section">
+            <!-- THIS IS JUST EXAMPLE FOR STYLE -->
+            <h1>This is third section title</h1>
+            <form>
+                <div class="contact-box">
+                    <label>Name</label>
+                    <input placeholder="name" type="text">
+                </div>
+                <div class="contact-box">
+                    <label>Email</label>
+                    <input placeholder="email" type="email">
+                </div>
+                <div class="contact-box">
+                    <label>Text</label>
+                    <textarea placeholder="Write your text..." type="text"></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h2>Thats it for today</h2>
+        <small>&copy; Nienormalny 2019</small>
+    </footer>
+</body>
+</html>

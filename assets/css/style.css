@@ -1,0 +1,229 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+/* === HEADER === */
+header {
+    background-color: #e3e3e3;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header ul > li:first-child {
+    margin-left: auto;
+}
+header a {
+    display: block;
+    color: #7f3ee0;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+header a:hover {
+    background-color: #c6bcd1;
+}
+/* === SECTIONS === */
+section#first-section {
+    height: calc(100vh - 73px);
+    padding-top: 48px;
+    background-color: #fb9b4c;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+}
+#first-section h1 {
+    text-transform: uppercase;
+    margin-top: auto;
+}
+#first-section a {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #da7b4c;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+#first-section a:hover {
+    background-color: #c52c1f;
+}
+section#second-section {
+    background-color: #4cb2fb;
+    height: auto;
+    /* min-height: 100vh; */
+}
+#second-section h1 {
+    text-align: center;
+}
+#second-section .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+#second-section .flex-container h3 {
+    background-color: #4c8cfb;
+    padding: 10px 25px;
+    color: white;
+    font-weight: normal;
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+section#third-section {
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+#third-section h1 {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    margin: 0 20px 20px 20px;
+    border-bottom: 1px dotted white;
+    padding-bottom: 5px;
+}
+#third-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px 20px 20px;
+    /* margin: auto; */
+}
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+label {
+    margin-bottom: 5px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 0;
+    background-color: #4cb2fb;
+    color: white;
+    word-break: break-all;
+    outline: none;
+}
+textarea {
+    resize: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+section {
+    padding: 25px;
+    height: calc(100vh - 130px);
+}
+section h1 {
+    margin: 0;
+    color: white;
+}
+/* === FOOTER === */
+footer {
+    background-color: rgb(255, 136, 56);
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+}
+footer h2 {
+    color: white;
+    margin: 0;
+    margin-right: auto;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+footer small {
+    color: white;
+}
+/* === SPECIAL CLASSES === */
+.employee-box {
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    position: relative;
+}
+.employee-box p {
+    margin: 0;
+    padding: 5px 25px;
+    background-color: rgb(27, 225, 255);
+    color: #363636;
+}
+.employee-box p:nth-child(odd) {
+    background-color: rgb(65, 77, 207);
+    color: white;
+}
+.employment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align:center;
+    background-color: rgba(7, 58, 102, 0.605);
+    padding: 5px;
+}
+.box {
+    background-color: rgb(45, 97, 143);
+    color: white;
+    padding: 25px;
+    display: block;
+    width: 150px;
+    height: 200px;
+    display: flex;
+}
+.box img {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    margin: auto;
+}
+/* === RESPONSIVE DESIGN === */
+@media screen and (max-width: 768px) {
+    header ul {
+        justify-content: space-around;
+    }
+    header ul > li:first-child {
+        margin-left: unset;
+    }
+    header ul > li:nth-child(2) {
+        border-width: 0 1px 0 1px;
+        border-style: solid;
+        border-color: #9c9c9c;
+    }
+    header ul > li > a {
+        width: calc(100vw / 3 - 40px);
+        text-align: center;
+    }
+    section#third-section {
+        height: 100vh;
+        flex-direction: column;
+    }
+}
